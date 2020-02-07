@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>совершенно секретно</h1>
+    <p>
+      введите пароль для входа:
+      <input type="password" id="passInput" />
+    </p>
+    <a href="secret.html" onclick="checkPass()"> Нажмите чтобы попасть на секретный сайт
+    </a>
+    <script type="text/javascript">
+      function checkPass()
+        let pass = document.getElementById("passInput").value
+        if (pass === "0000") {
+          return false
+        }
+    </script>
+  </body>
+</html>
